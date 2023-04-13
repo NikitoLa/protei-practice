@@ -47,22 +47,13 @@ file(GLOB SRC
         )
 include_directories(Source)
 
+
 add_executable(Practice ${SRC})
 
 target_link_libraries(Practice
         PRIVATE benchmark::benchmark)
 
 target_link_libraries(Practice PRIVATE re2::re2)
-
-# set( BOOST_ROOT "/home/nikitola/Downloads/boost_1_81_0/lib/" CACHE PATH "Boost library path" )
-# set( Boost_NO_SYSTEM_PATHS on CACHE BOOL "Do not search system for Boost" )
-
-# find_package(Boost REQUIRED regex)
-# include_directories(${BOOST_INCLUDE_DIRS})
-
-# target_link_libraries(Practice PRIVATE
-#         ${Boost_LIBRARIES}
-# )
 
 set(Boost_INCLUDE_DIR ${CMAKE_SOURCE_DIR}/boost)
 set(Boost_LIBRARY_DIR ${CMAKE_SOURCE_DIR}/lib)
@@ -72,5 +63,5 @@ link_directories(${Boost_LIBRARY_DIR})
 
 target_link_libraries( Practice PRIVATE ${Boost_LIBRARIES} )
 
-
+target_link_libraries(Practice PRIVATE pcre2-posix-static)
 
