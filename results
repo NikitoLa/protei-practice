@@ -1,110 +1,19 @@
-{
-  "context": {
-    "date": "2023-04-13T10:27:33+03:00",
-    "host_name": "nikitola-Aspire-5830TG",
-    "executable": "./Practice",
-    "num_cpus": 4,
-    "mhz_per_cpu": 2900,
-    "cpu_scaling_enabled": true,
-    "caches": [
-      {
-        "type": "Data",
-        "level": 1,
-        "size": 32768,
-        "num_sharing": 2
-      },
-      {
-        "type": "Instruction",
-        "level": 1,
-        "size": 32768,
-        "num_sharing": 2
-      },
-      {
-        "type": "Unified",
-        "level": 2,
-        "size": 262144,
-        "num_sharing": 2
-      },
-      {
-        "type": "Unified",
-        "level": 3,
-        "size": 3145728,
-        "num_sharing": 4
-      }
-    ],
-    "load_avg": [0.0712891,0.580566,0.705566],
-    "library_build_type": "debug"
-  },
-  "benchmarks": [
-    {
-      "name": "MyFixture/stdRegex",
-      "family_index": 0,
-      "per_family_instance_index": 0,
-      "run_name": "MyFixture/stdRegex",
-      "run_type": "iteration",
-      "repetitions": 1,
-      "repetition_index": 0,
-      "threads": 1,
-      "iterations": 10,
-      "real_time": 5.8079067200014830e+07,
-      "cpu_time": 5.8077398799999997e+07,
-      "time_unit": "ns"
-    },
-    {
-      "name": "MyFixture/re2",
-      "family_index": 1,
-      "per_family_instance_index": 0,
-      "run_name": "MyFixture/re2",
-      "run_type": "iteration",
-      "repetitions": 1,
-      "repetition_index": 0,
-      "threads": 1,
-      "iterations": 5,
-      "real_time": 1.3652912020006627e+08,
-      "cpu_time": 1.3652442559999996e+08,
-      "time_unit": "ns"
-    },
-    {
-      "name": "MyFixture/boost",
-      "family_index": 2,
-      "per_family_instance_index": 0,
-      "run_name": "MyFixture/boost",
-      "run_type": "iteration",
-      "repetitions": 1,
-      "repetition_index": 0,
-      "threads": 1,
-      "iterations": 271,
-      "real_time": 2.7066709114388111e+06,
-      "cpu_time": 2.7065219151291521e+06,
-      "time_unit": "ns"
-    },
-    {
-      "name": "MyFixture/xpression",
-      "family_index": 3,
-      "per_family_instance_index": 0,
-      "run_name": "MyFixture/xpression",
-      "run_type": "iteration",
-      "repetitions": 1,
-      "repetition_index": 0,
-      "threads": 1,
-      "iterations": 206,
-      "real_time": 3.6644375728137321e+06,
-      "cpu_time": 3.6639838980582543e+06,
-      "time_unit": "ns"
-    },
-    {
-      "name": "MyFixture/pcre",
-      "family_index": 4,
-      "per_family_instance_index": 0,
-      "run_name": "MyFixture/pcre",
-      "run_type": "iteration",
-      "repetitions": 1,
-      "repetition_index": 0,
-      "threads": 1,
-      "iterations": 239,
-      "real_time": 2.8281339707128727e+06,
-      "cpu_time": 2.8279721631799177e+06,
-      "time_unit": "ns"
-    }
-  ]
-}
+2023-04-13T18:42:19+03:00
+Running ./Practice
+Run on (4 X 2900 MHz CPU s)
+CPU Caches:
+  L1 Data 32 KiB (x2)
+  L1 Instruction 32 KiB (x2)
+  L2 Unified 256 KiB (x2)
+  L3 Unified 3072 KiB (x1)
+Load Average: 1.00, 0.94, 1.31
+***WARNING*** CPU scaling is enabled, the benchmark real time measurements may be noisy and will incur extra overhead.
+***WARNING*** Library was built as DEBUG. Timings may be affected.
+--------------------------------------------------------------
+Benchmark                    Time             CPU   Iterations
+--------------------------------------------------------------
+MyFixture/stdRegex    56582707 ns     56565443 ns            9
+MyFixture/re2        143139677 ns    143096188 ns            5
+MyFixture/boost        2646099 ns      2645280 ns          251
+MyFixture/xpression    3345972 ns      3344274 ns          201
+MyFixture/pcre         2986314 ns      2985082 ns          247
