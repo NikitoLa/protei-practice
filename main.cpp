@@ -46,7 +46,7 @@ bool FindReg(std::string str, std::regex reg_expression) {
 }
 
 bool FindRe2(std::string str, std::string reg_expression) {
-  return RE2::PartialMatch(str, reg_expression);
+  return RE2::FullMatch(str, reg_expression);
 }
 
 bool FindBoost(std::string str, boost::regex reg_expression) {

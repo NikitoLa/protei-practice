@@ -1,4 +1,4 @@
-2023-04-13T18:42:19+03:00
+2023-04-14T17:01:20+03:00
 Running ./Practice
 Run on (4 X 2900 MHz CPU s)
 CPU Caches:
@@ -6,14 +6,14 @@ CPU Caches:
   L1 Instruction 32 KiB (x2)
   L2 Unified 256 KiB (x2)
   L3 Unified 3072 KiB (x1)
-Load Average: 1.00, 0.94, 1.31
+Load Average: 1.80, 2.80, 1.77
 ***WARNING*** CPU scaling is enabled, the benchmark real time measurements may be noisy and will incur extra overhead.
 ***WARNING*** Library was built as DEBUG. Timings may be affected.
 --------------------------------------------------------------
 Benchmark                    Time             CPU   Iterations
 --------------------------------------------------------------
-MyFixture/stdRegex    56582707 ns     56565443 ns            9
-MyFixture/re2        143139677 ns    143096188 ns            5
-MyFixture/boost        2646099 ns      2645280 ns          251
-MyFixture/xpression    3345972 ns      3344274 ns          201
-MyFixture/pcre         2986314 ns      2985082 ns          247
+MyFixture/stdRegex    56942595 ns     56941447 ns           12
+MyFixture/re2         91502089 ns     91504819 ns            7
+MyFixture/boost        2658364 ns      2658299 ns          262
+MyFixture/xpression    3372935 ns      3372660 ns          208
+MyFixture/pcre         2854950 ns      2854854 ns          243
